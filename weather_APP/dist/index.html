@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body
+        class="w-full h-screen bg-gradient-to-br from-indigo-600 via-sky-600 to-emerald-500 flex justify-center items-center ">
+        <div id="container" class="h-auto w-max bg-white/30 backdrop-blur-md p-16 rounded-md flex items-center flex-col  gap-8 shadow-2xl">
+            <div id="search" class="flex rounded-full justify-center items-center bg-slate-100 h-auto shadow-2xl">
+                <img src="./images/search.png" class="h-8 rounded-full px-2 left-1 relative py-1" alt>
+                <input type="text" class="flex-1 px-2 py-1 bg-slate-100 rounded-full outline-none text-xl  text-[#646464] " placeholder="Search city ...">
+                <button class="px-4 font-semibold text-xl py-2 bg-indigo-500 hover:bg-indigo-600 duration-200 text-white rounded-full">Search</button>
+            </div>
+            <p class="text-red-600 font-semibold text-lg bg-white p-3 rounded-md shadow-md hidden" id="notFound">City Not Found !!</p>
+            <div id="weather" class=" flex flex-col justify-center items-center w-full duration-500 hidden">
+                <p class="weatherStatus text-white text-lg">Clear</p>
+                <img src="images/rain.png" class="h-36 weatherImage" alt="">
+                <h1 class="temp text-center text-8xl text-white font-semibold ">22°C</h1>
+                <p class="feel text-white font-light tracking-wider mb-4">Feels like 22°C </p>
+                <p class="city text-center text-5xl text-white tracking-wide">New York</p>
+                <div class="details flex justify-between w-full items-center mt-10">
+                    <div class="flex justify-center items-center gap-5">
+                        <img src="images/humidity.png" class="h-8" alt="">
+                        <div class="text-white">
+                            <p class="text-3xl humidity">50%</p>
+                            <p class="text-lg tracking-wider">Humidity</p>
+                        </div>
+                    </div>
+                    <div class="flex justify-center items-center gap-5">
+                        <img src="images/wind.png" class="h-10" alt="">
+                        <div class="">
+                            <p class="text-3xl wind text-white">15 km/h</p>
+                            <p class="text-lg text-white tracking">Wind Speed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
