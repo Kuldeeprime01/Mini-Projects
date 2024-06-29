@@ -1,0 +1,99 @@
+.outerTictactoe{
+    height: 400px;
+    width: 400px;
+    background-color: #DA7297;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.outerTictactoe > button{
+    outline: none;
+    border: none;
+    width: 30%;
+    height: 30%;
+    background-color: #FDFFD2;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #667BC6;
+    font-size: 70px;
+    font-weight: 700;
+    transition: 0.1s;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.outerTictactoe > button:hover{
+    background-color: #fbffab;
+}
+body{
+    font-family: 'poppins';
+    display: flex;
+    flex-direction: column;
+    background-color: #667BC6;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+h1{
+    color: #FDFFD2;
+    margin-bottom: 10px;
+    font-size: 50px
+}
+div>p{
+    color: #FDFFD2;
+    margin-bottom: 50px;
+    font-size: x-large;
+    font-weight: 500;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #DA7297;
+    width: auto;
+    height: max-content;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.line{
+    width: 5px;
+    height: 400px;
+    position: absolute;
+    background-color: black;
+    top: 321px;
+}
+.reset{
+    background-color: #667BC6;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    padding: 10px 20px;
+    font-size: larger;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 10px;
+    transition: 0.1s;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.reset:hover{
+    background-color: #4e63b1;
+}
+.reset:active{
+    box-shadow: none;
+}
+.outerTictactoe>button:active{
+    box-shadow: none;
+}
+
